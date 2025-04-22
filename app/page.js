@@ -1,10 +1,10 @@
-import AboutUs from "./(pages)/about-us";
+import Navbar from "@/components/shared/common/navbar/navbar";
 
 export default function Home() {
   return (
-    <div>
+    <div className="font-montserrat">
+      <Navbar/>
       home
-      <AboutUs/>
     </div>
   );
 }
