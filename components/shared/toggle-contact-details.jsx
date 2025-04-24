@@ -28,13 +28,13 @@ const ToggleContactDetails = () => {
       )}
 
       {isOpen && (
-        <div className="lg:hidden flex flex-col bg-white shadow-md rounded-lg absolute top-16 right-4 z-10">
+        <div className="lg:hidden flex flex-col bg-white shadow-md border-2 border-primary absolute top-16 right-4 z-10">
           {HeaderContact.map((item) => {
             const { id, icon, label, value } = item;
             return (
               <div
                 key={id}
-                className={`py-2 px-4 ${id === 3 ? "border-none" : ""}`}
+                className={`py-2 px- mx-3 border-b border-zinc-300 lg:border-none ${id === 3 ? "border-none" : ""}`}
               >
                 <HeaderContacts icon={icon} label={label} value={value} />
               </div>

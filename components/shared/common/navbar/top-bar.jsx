@@ -7,23 +7,20 @@ import { ChevronDown, ChevronUp, Menu } from "lucide-react";
 import ToggleContactDetails from "../../toggle-contact-details";
 
 const TopBar = () => {
-//   const [isOpen, setIsOpen] = useState(false);
-//   const toggleMenu = () => {
-//     setIsOpen(!isOpen);
-//   };
-
+ 
   return (
-    <div className="h-full border py-3  flex justify-between items-center px-4 lg:h-36 lg:px-16 xl:px-20">
+    <div className="h-full lg:h-36 py-3 flex justify-between items-center px-4 lg:px-16 xl:px-20">
       {/* contact bar conatainer */}
 
       {/* logo container */}
-      <div className="w-fit border flex items-center gap-3  lg:p-4">
+      <div className="w-fit border flex items-center gap-3 lg:p-4">
       
         {/* menu bar  */}
         <div className="lg:hidden">
-          <Menu className="lg:hidden " size={30} />
+          <Menu size={30} />
         </div>
-       
+
+        {/* logo  */}
         <Image
           src="/assets/logo.jpg"
           alt="AR Hospital"
@@ -40,12 +37,14 @@ const TopBar = () => {
 
       {/* contact bar conatainer */}
       <div className="hidden lg:flex gap-2 xl:gap-11 ">
+        
         {HeaderContact.map((item) => {
           const { id, icon, label, value } = item;
           return (
             <HeaderContacts key={id} icon={icon} label={label} value={value} />
           );
         })}
+
       </div>
     </div>
   );
