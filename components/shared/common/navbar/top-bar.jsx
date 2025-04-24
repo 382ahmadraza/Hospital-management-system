@@ -1,9 +1,8 @@
-"use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React  from "react";
 import HeaderContacts from "../../header-contacts";
 import { HeaderContact } from "@/data/index";
-import { ChevronDown, ChevronUp, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import ToggleContactDetails from "../../toggle-contact-details";
 
 const TopBar = () => {

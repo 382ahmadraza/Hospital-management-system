@@ -3,7 +3,7 @@ import React  from 'react'
 
 const Button = ( {btnText , className}) => {
   return (
-        <Link href={"#"} className={`p-3 text-sm bg-red-500 ${className}`}>
+        <Link href={"#"} className={`py-3 text-sm  hover:text-primary ${className}`}>
              {btnText}
         </Link>
   )

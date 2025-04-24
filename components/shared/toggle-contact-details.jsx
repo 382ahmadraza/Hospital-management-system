@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { MedIcon } from "@/assets/svg";
@@ -27,6 +28,7 @@ const ToggleContactDetails = () => {
         </>
       )}
 
+      {/* map on conatct info bar for small screens  */}
       {isOpen && (
         <div className="lg:hidden flex flex-col bg-white shadow-md border-2 border-primary absolute top-16 right-4 z-10">
           {HeaderContact.map((item) => {
@@ -34,7 +36,9 @@ const ToggleContactDetails = () => {
             return (
               <div
                 key={id}
-                className={`py-2 px- mx-3 border-b border-zinc-300 lg:border-none ${id === 3 ? "border-none" : ""}`}
+                className={`py-2 px- mx-3 border-b border-zinc-300 lg:border-none ${
+                  id === 3 ? "border-none" : ""
+                }`}
               >
                 <HeaderContacts icon={icon} label={label} value={value} />
               </div>
