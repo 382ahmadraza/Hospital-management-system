@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { ChevronDown, ChevronUp } from "lucide-react";
-import { MedIcon } from "@/assets/svg";
+import { MedIcon ,ChevronIcon } from "@/assets/svg";
 import HeaderContacts from "./header-contacts";
 import { HeaderContact } from "@/data/index";
 
@@ -19,28 +18,33 @@ const ToggleContactDetails = () => {
       {isOpen ? (
         <>
           <MedIcon size={34} className="text-primary border-1" />
-          <ChevronUp className="h-[34px] w-9 bg-primary" />
+          <ChevronIcon className="rotate-180 h-[34px] w-9 bg-primary" />
         </>
       ) : (
         <>
           <MedIcon size={34} className="bg-primary " />
-          <ChevronDown className="h-[34px] w-9 text-primary border-1" />
+          <ChevronIcon className="h-[34px] w-9 text-primary border-1" />
         </>
       )}
 
-      {/* map on conatct info bar for small screens  */}
+      {/* show on toggle click for small screens */}
       {isOpen && (
-        <div className="lg:hidden flex flex-col bg-white shadow-md border-2 border-primary absolute top-16 right-4 z-10">
+        <div className="lg:hidden flex flex-col bg-white shadow-md border border-primary absolute top-16 right-4 z-10">
+         
+          {/* map on conatct info bar for small screens  */}
           {HeaderContact.map((item) => {
-            const { id, icon, label, value } = item;
             return (
               <div
-                key={id}
+                key={item.id}
                 className={`py-2 px- mx-3 border-b border-zinc-300 lg:border-none ${
-                  id === 3 ? "border-none" : ""
+                  item.id === 3 ? "border-none" : ""
                 }`}
               >
-                <HeaderContacts icon={icon} label={label} value={value} />
+                <HeaderContacts
+                  icon={item.icon}
+                  label={item.label}
+                  value={item.value}
+                />
               </div>
             );
           })}

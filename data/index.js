@@ -1,7 +1,50 @@
 // All the array of objects or hard-corded data store here
 
-import { LocationPin, Mobile, Time } from "@/assets/svg";
+export const navItems = [
+  {
+    values: [
+      { label: "Board Of Trustees", href: "/about-us/board-of-trustees" },
+      { label: "Management Team", href: "/about-us/management-team" },
+    ],
+  },
+];
 
+export const navItems1 = [
+  {
+    values: [
+      { label: "Neuroscience", href: "/departments/neuroscience" },
+      { label: "Medicine", href: "/departments/medicine" },
+      { label: "Child Health", href: "/departments/child-health" },
+      { label: "Dental Surgery", href: "/departments/dental-surgery" },
+      { label: "ENT", href: "/departments/ent" },
+      { label: "Dermatology", href: "/departments/dermatology" },
+      { label: "Urology", href: "/departments/urology" },
+      { label: "Eye Surgery", href: "/departments/eye-surgery" },
+      { label: "Gastroenterology", href: "/departments/gastroenterology" },
+      { label: "Gynaecology", href: "/departments/gynaecology" },
+      { label: "General Surgery", href: "/departments/general-surgery" },
+      { label: "Orthopedic", href: "/departments/orthopedic" },
+      { label: "Psychiatry", href: "/departments/psychiatry" },
+      { label: "Pulmonology", href: "/departments/pulmonology" },
+      { label: "Cardiology", href: "/departments/cardiology" },
+      {
+        label: "Dietitian and Nutritionist",
+        href: "/departments/dietitian-nutritionist",
+      },
+    ],
+  },
+];
+
+export const navItems2 = [
+  {
+    values: [
+      { label: "Laboratory", href: "/diagnostic/laboratory" },
+      { label: "Radiology", href: "/diagnostic/radiology" },
+    ],
+  },
+];
+
+import { LocationPin, Mobile, Time } from "@/assets/svg";
 
 // header top contact details bar
 export const HeaderContact = [

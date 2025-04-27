@@ -1,11 +1,12 @@
 import Link from 'next/link'
 import React  from 'react'
+import LinkCustom from './link-custom'
 
-const Button = ( {btnText , className}) => {
+const Button = ( {btnText="" , className="" , url="#"}) => {
   return (
-        <Link href={"#"} className={`py-3 text-sm  hover:text-primary ${className}`}>
+        <LinkCustom url={url} className={`py-3 text-sm  hover:text-primary ${className}`}>
              {btnText}
-        </Link>
+        </LinkCustom>
   )
 }   
 
