@@ -43,18 +43,17 @@ const Navbar = () => {
         </div>
 
         {/* nav bottom part  */}
-        <ul className="flex items-center w-full gap-3">
-          <li className="flex gap-9 font-bold text-darkGray">
-            <Button url="/" btnText="Home" />
-            <DropDown loop={navItems} navLink="About us" />
-            <DropDown loop={navItems1} navLink="Department" />
-            <Button btnText="AFMDC" />
-            <DropDown loop={navItems2} navLink="Diagnostic Center" />
-            <Button btnText="Contact Us" />
-            <Button btnText="Careers" />
-            <Button btnText="Online Lab Reports" />
-          </li>
-        </ul>
+        <ul className="flex items-center w-full gap-3 py-2 font-bold text-darkGray">
+  <li><Button url="/" btnText="Home" /></li>
+  <li><DropDown loop={navItems} navLink="About us" goto='/about-us'/></li>
+  <li><DropDown loop={navItems1} navLink="Department" goto='/department'/></li>
+  <li><Button btnText="AFMDC" /></li>
+  <li><DropDown loop={navItems2} navLink="Diagnostic Center" goto='diagnostic-center'/></li>
+  <li><Button btnText="Contact Us" /></li>
+  <li><Button btnText="Careers" /></li>
+  <li><Button btnText="Online Lab Reports" /></li>
+</ul>
+
       </div>
     </div>
   );

@@ -1,17 +1,12 @@
 // All the array of objects or hard-corded data store here
 
 export const navItems = [
-  {
-    values: [
       { label: "Board Of Trustees", href: "/about-us/board-of-trustees" },
       { label: "Management Team", href: "/about-us/management-team" },
-    ],
-  },
 ];
 
 export const navItems1 = [
-  {
-    values: [
+ 
       { label: "Neuroscience", href: "/departments/neuroscience" },
       { label: "Medicine", href: "/departments/medicine" },
       { label: "Child Health", href: "/departments/child-health" },
@@ -31,17 +26,14 @@ export const navItems1 = [
         label: "Dietitian and Nutritionist",
         href: "/departments/dietitian-nutritionist",
       },
-    ],
-  },
+ 
 ];
 
 export const navItems2 = [
-  {
-    values: [
+ 
       { label: "Laboratory", href: "/diagnostic/laboratory" },
       { label: "Radiology", href: "/diagnostic/radiology" },
-    ],
-  },
+ 
 ];
 
 import { LocationPin, Mobile, Time } from "@/assets/svg";
