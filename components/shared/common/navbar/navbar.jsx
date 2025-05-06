@@ -43,7 +43,7 @@ const Navbar = () => {
         </div>
 
         {/* nav bottom part  */}
-        <ul className="flex items-center w-full gap-3 py-2 font-bold text-darkGray">
+        <ul className="flex items-center w-full gap-4 text-sm py-2 font-bold text-darkGray">
   <li><Button url="/" btnText="Home" /></li>
   <li><DropDown loop={navItems} navLink="About us" goto='/about-us'/></li>
   <li><DropDown loop={navItems1} navLink="Department" goto='/department'/></li>
