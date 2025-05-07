@@ -12,7 +12,7 @@ const TopBar = () => {
     <div className="h-full lg:h-36 py-3 flex justify-between items-center px-4 md:px-6 lg:px-16 xl:px-20">
 
       {/* logo container */}
-      <div className="w-fit cursor-pointer flex items-center gap-1 lg:p-">
+      <div className="w-fit cursor-pointer flex items-center gap-1">
        
         {/* menu bar  */}
         <div className="lg:hidden">
@@ -24,8 +24,8 @@ const TopBar = () => {
           <Image
             src="/assets/logo.png"
             alt="AR Hospital"
-            height={70}
-            width={70}
+            height={80}
+            width={80}
             className="p-3  proriorty lg:p-0"
           />
         </LinkCustom>

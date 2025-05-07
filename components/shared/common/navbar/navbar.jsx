@@ -7,6 +7,7 @@ import Button from "../../button";
 import DropDown from "../../drop-down";
 import LinkCustom from "../../link-custom";
 import { navItems, navItems1, navItems2 } from "@/data/index";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const social = [
@@ -15,8 +16,36 @@ const Navbar = () => {
     { href: "#", icon: <Linkdin /> },
   ];
 
+  const navLinks = [
+    { id: 1, btn: <Button btnText="Home" />, href: "/" },
+    {
+      id: 2,
+      btn: <DropDown loop={navItems} navLink="About us" />,
+      href: "/about-us",
+    },
+    {
+      id: 3,
+      btn: <DropDown loop={navItems1} navLink="Department" />,
+      href: "/department",
+    },
+    { id: 4, btn: <Button btnText="ARMDC" />, href: "/armdc" },
+    {
+      id: 5,
+      btn: <DropDown loop={navItems2} navLink="Diagnostic Center" />,
+      href: "/diagnostic-center",
+    },
+    { id: 6, btn: <Button btnText="Contact Us" />, href: "/contact-us" },
+    { id: 7, btn: <Button btnText="Careers" />, href: "/careers" },
+    {
+      id: 8,
+      btn: <Button btnText="Online Lab Reports" />,
+      href: "/online-lab-reports",
+    },
+  ];
+
+  const pathName = usePathname();
   // array of dropdwon menus
-  
+
   return (
     <div className="h-20 lg:h-64  ">
       {/* contact info bar  */}
@@ -43,17 +72,23 @@ const Navbar = () => {
         </div>
 
         {/* nav bottom part  */}
-        <ul className="flex items-center w-full gap-4 text-sm py-2 font-bold text-darkGray">
-  <li><Button url="/" btnText="Home" /></li>
-  <li><DropDown loop={navItems} navLink="About us" goto='/about-us'/></li>
-  <li><DropDown loop={navItems1} navLink="Department" goto='/department'/></li>
-  <li><Button btnText="AFMDC" /></li>
-  <li><DropDown loop={navItems2} navLink="Diagnostic Center" goto='diagnostic-center'/></li>
-  <li><Button btnText="Contact Us" /></li>
-  <li><Button btnText="Careers" /></li>
-  <li><Button btnText="Online Lab Reports" /></li>
-</ul>
+        <ul className="flex items-center py-1 w-full gap-5 text-sm font-bold">
+          {navLinks.map((item) => {
+            return (
+              <LinkCustom
+                url={item.href}
+                key={item.id}
+                className={`flex items-center  ${
+                  pathName === item.href ? "text-primary" : "text-darkGray"
+                }`}
+              >
+                {item.btn}
+              </LinkCustom>
+            );
+          })}
+        </ul>
 
+        
       </div>
     </div>
   );
