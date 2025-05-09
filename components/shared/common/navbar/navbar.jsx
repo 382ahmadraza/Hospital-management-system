@@ -3,10 +3,8 @@ import React from "react";
 import TopBar from "./top-bar";
 import SearchField from "../../search-field";
 import { Facebook, Instagram, Linkdin } from "@/assets/svg/social";
-import Button from "../../button";
-import DropDown from "../../drop-down";
 import LinkCustom from "../../link-custom";
-import { navItems, navItems1, navItems2 } from "@/data/index";
+import { navLinks } from "@/data/index";
 import { usePathname } from "next/navigation";
 
 const Navbar = () => {
@@ -16,42 +14,13 @@ const Navbar = () => {
     { href: "#", icon: <Linkdin /> },
   ];
 
-  const navLinks = [
-    { id: 1, btn: <Button btnText="Home" />, href: "/" },
-    {
-      id: 2,
-      btn: <DropDown loop={navItems} navLink="About us" />,
-      href: "/about-us",
-    },
-    {
-      id: 3,
-      btn: <DropDown loop={navItems1} navLink="Department" />,
-      href: "/department",
-    },
-    { id: 4, btn: <Button btnText="ARMDC" />, href: "/armdc" },
-    {
-      id: 5,
-      btn: <DropDown loop={navItems2} navLink="Diagnostic Center" />,
-      href: "/diagnostic-center",
-    },
-    { id: 6, btn: <Button btnText="Contact Us" />, href: "/contact-us" },
-    { id: 7, btn: <Button btnText="Careers" />, href: "/careers" },
-    {
-      id: 8,
-      btn: <Button btnText="Online Lab Reports" />,
-      href: "/online-lab-reports",
-    },
-  ];
-
   const pathName = usePathname();
   // array of dropdwon menus
 
   return (
-    <div className="h-20 lg:h-64  ">
+    <header className="h-20 lg:h-64  ">
       {/* contact info bar  */}
-      <>
-        <TopBar />
-      </>
+      <TopBar />
 
       <div className="hidden lg:flex flex-col justify-center border-t border-zinc-200 shadow-md h- px-4 lg:px-16 xl:px-20">
         {/* nav top part  */}
@@ -72,25 +41,25 @@ const Navbar = () => {
         </div>
 
         {/* nav bottom part  */}
-        <ul className="flex items-center py-1 w-full gap-5 text-sm font-bold">
+        <ul className="flex items-center w-full gap-5 text-sm font-bold ">
           {navLinks.map((item) => {
             return (
-              <LinkCustom
-                url={item.href}
+              <div
                 key={item.id}
                 className={`flex items-center  ${
-                  pathName === item.href ? "text-primary" : "text-darkGray"
+                  pathName === item.href
+                    ? "text-primary border-b-4 border-primary "
+                    : "text-darkGray"
                 }`}
               >
-                {item.btn}
-              </LinkCustom>
+                <LinkCustom url={item.href}>{item.btn}</LinkCustom>
+                {/* <span className="lg:hidden">{item.btn}</span> */}
+              </div>
             );
           })}
         </ul>
-
-        
       </div>
-    </div>
+    </header>
   );
 };
 

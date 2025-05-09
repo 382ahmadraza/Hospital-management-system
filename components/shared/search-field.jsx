@@ -1,10 +1,10 @@
 import { Search } from 'lucide-react'
 import React from 'react'
 
-const SearchField = ({className}) => {
+const SearchField = ({className=""}) => {
   return (
-    <div className='flex items-center   h-full px-2 text-sm'>
-        <input type="text" placeholder="Looking for..." className={`py-2 ${className}`}/>
+    <div className={`flex items-center justify-between h-full px-2 text-sm ${className}`}>
+        <input type="text"  placeholder="Looking for..." className={`py-2 outline-none  `}/>
          <Search size={18}/>
     </div>
   )

@@ -4,10 +4,16 @@ import HeaderContacts from "../../header-contacts";
 import { HeaderContact } from "@/data/index";
 import { Menu } from "lucide-react";
 import ToggleContactDetails from "../../toggle-contact-details";
-import Link from "next/link";
 import LinkCustom from "../../link-custom";
+import { useState } from 'react'
+import Sidebar from "../sidebar";
 
 const TopBar = () => {
+  const [IsOpen, setIsOpen] = useState(false)
+  const handleToggle = () => {
+    setIsOpen(!IsOpen);
+  };
+
   return (
     <div className="h-full lg:h-36 py-3 flex justify-between items-center px-4 md:px-6 lg:px-16 xl:px-20">
 
@@ -16,7 +22,10 @@ const TopBar = () => {
        
         {/* menu bar  */}
         <div className="lg:hidden">
-          <Menu size={30} />
+          <Menu size={30} onClick={handleToggle}/>
+          {IsOpen && (
+               <Sidebar onClose={()=>setIsOpen(false)} />
+          )}
         </div>
 
         {/* logo  */}

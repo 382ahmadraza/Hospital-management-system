@@ -1,6 +1,8 @@
 // All the array of objects or hard-corded data store here
 
-
+import { LocationPin, Mobile, Time } from "@/assets/svg";
+import Button from "@/components/shared/button";
+import DropDown from "@/components/shared/drop-down";
 
 
 export const navItems = [
@@ -38,8 +40,36 @@ export const navItems2 = [
       { label: "Radiology", href: "/diagnostic/radiology" },
  
 ];
+export const navLinks = [
+    { id: 1, btn: <Button btnText="Home" />, href: "/" },
+    {
+      id: 2,
+      btn: <DropDown loop={navItems} navLink="About us" />,
+      href: "/about-us",
+    },
+    {
+      id: 3,
+      btn: <DropDown loop={navItems1} navLink="Department" />,
+      href: "/department",
+    },
+    { id: 4, btn: <Button btnText="ARMDC" />, href: "/armdc" },
+    {
+      id: 5,
+      btn: <DropDown loop={navItems2} navLink="Diagnostic Center" />,
+      href: "/diagnostic-center",
+    },
+    { id: 6, btn: <Button btnText="Contact Us" />, href: "/contact-us" },
+    { id: 7, btn: <Button btnText="Careers" />, href: "/careers" },
+    {
+      id: 8,
+      btn: <Button btnText="Online Lab Reports" />,
+      href: "/online-lab-reports",
+    },
+  ];
 
-import { LocationPin, Mobile, Time } from "@/assets/svg";
+
+
+
 
 // header top contact details bar
 export const HeaderContact = [
