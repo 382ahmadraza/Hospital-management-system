@@ -15,7 +15,7 @@ const TopBar = () => {
   };
 
   return (
-    <div className="h-full lg:h-36 py-3 flex justify-between items-center px-4 md:px-6 lg:px-16 xl:px-20">
+    <div className="h-full lg:h-36 py-3 shadow-md lg:shadow-none flex justify-between items-center px-4 md:px-6 lg:px-16 xl:px-20">
 
       {/* logo container */}
       <div className="w-fit cursor-pointer flex items-center gap-1">
@@ -35,7 +35,7 @@ const TopBar = () => {
             alt="AR Hospital"
             height={80}
             width={80}
-            className="p-3  proriorty lg:p-0"
+            className="p-4  proriorty lg:p-0"
           />
         </LinkCustom>
       </div>

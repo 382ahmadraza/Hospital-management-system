@@ -1,6 +1,7 @@
 // All the array of objects or hard-corded data store here
 
 import { LocationPin, Mobile, Time } from "@/assets/svg";
+import { Facebook, Instagram, Linkdin } from "@/assets/svg/social";
 import Button from "@/components/shared/button";
 import DropDown from "@/components/shared/drop-down";
 
@@ -68,7 +69,11 @@ export const navLinks = [
   ];
 
 
-
+export const social = [
+    { href: "https://www.facebook.com", icon: <Facebook /> },
+    { href: "https://www.instagram.com/", icon: <Instagram /> },
+    { href: "https://www.linkedin.com/", icon: <Linkdin /> },
+  ];
 
 
 // header top contact details bar

@@ -1,11 +1,13 @@
 import React from 'react'
 import Navbar from "@/components/shared/common/navbar/navbar";
+import HeroCarousel from '@/components/home/hero-carousel';
 
 export default function Home() {
   return (
     <div className="font-montserrat">
       <Navbar/>
-      home
+      <HeroCarousel/>
+      awearee
     </div>
   );
 }

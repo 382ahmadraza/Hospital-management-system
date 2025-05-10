@@ -25,11 +25,11 @@ const DropDown = ({ loop, navLink }) => {
         {loop.map((item, index) => (
           <div
             key={index}
-            className={`flex items-center gap-2 py-1.5  hover:text-primary ${
+            className={` py-1.5  hover:text-primary ${
               pathName === item.href ? "text-primary " : ""
             }`}
           >
-            <LinkCustom url={item.href}>
+            <LinkCustom url={item.href} className="flex items-center gap-2">
             <ChevronIcon className="-rotate-90 text-zinc-400" size={14} />
             {item.label}
             </LinkCustom>

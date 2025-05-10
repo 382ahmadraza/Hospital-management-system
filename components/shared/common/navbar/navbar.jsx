@@ -2,17 +2,12 @@
 import React from "react";
 import TopBar from "./top-bar";
 import SearchField from "../../search-field";
-import { Facebook, Instagram, Linkdin } from "@/assets/svg/social";
 import LinkCustom from "../../link-custom";
-import { navLinks } from "@/data/index";
+import { navLinks,social } from "@/data/index";
 import { usePathname } from "next/navigation";
 
 const Navbar = () => {
-  const social = [
-    { href: "#", icon: <Facebook /> },
-    { href: "#", icon: <Instagram /> },
-    { href: "#", icon: <Linkdin /> },
-  ];
+ 
 
   const pathName = usePathname();
   // array of dropdwon menus

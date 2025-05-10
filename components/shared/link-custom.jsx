@@ -4,9 +4,9 @@ import Link from 'next/link'
 import React from 'react'
 
 
-const LinkCustom = ({children , className="" , url="#"}) => {
+const LinkCustom = ({children , className="" , url="#" , target=''}) => {
   return (
-    <Link href={url} className={className}>
+    <Link href={url} className={className} target={target}>
         {children}
     </Link>
   )
