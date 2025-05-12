@@ -2,8 +2,8 @@
 
 import { LocationPin, Mobile, Time } from "@/assets/svg";
 import { Facebook, Instagram, Linkdin } from "@/assets/svg/social";
-import Button from "@/components/shared/button";
-import DropDown from "@/components/shared/drop-down";
+import Button from "@/components/shared/common/button";
+import DropDown from "@/components/shared/common/drop-down";
 
 
 export const navItems = [

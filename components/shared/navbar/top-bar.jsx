@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import HeaderContacts from "../../header-contacts";
+import HeaderContacts from "../common/header-contacts";
 import { HeaderContact } from "@/data/index";
 import { Menu } from "lucide-react";
-import ToggleContactDetails from "../../toggle-contact-details";
-import LinkCustom from "../../link-custom";
+import ToggleContactDetails from "../common/toggle-contact-details";
+import LinkCustom from "../common/link-custom";
 import { useState } from 'react'
 import Sidebar from "../sidebar";
 

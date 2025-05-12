@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import TopBar from "./top-bar";
-import SearchField from "../../search-field";
-import LinkCustom from "../../link-custom";
+import SearchField from "../common/search-field";
+import LinkCustom from "../common/link-custom";
 import { navLinks,social } from "@/data/index";
 import { usePathname } from "next/navigation";
 
@@ -13,7 +13,7 @@ const Navbar = () => {
   // array of dropdwon menus
 
   return (
-    <header className="h-20 lg:h-64  ">
+    <header className="h-20 lg:h-fit  ">
       {/* contact info bar  */}
       <TopBar />
 

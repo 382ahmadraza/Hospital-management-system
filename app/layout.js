@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono ,Montserrat} from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/shared/common/navbar/navbar";
+import Navbar from "@/components/shared/navbar/navbar";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",

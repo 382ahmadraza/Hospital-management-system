@@ -1,19 +1,18 @@
-import React from 'react'
-import Navbar from "@/components/shared/common/navbar/navbar";
-import HeroCarousel from '@/components/home/hero-carousel';
+import React from "react";
+import Navbar from "@/components/shared/navbar/navbar";
+import HeroCarousel from "@/components/home/hero-carousel";
+import InfoCards from "@/components/home/info-cards";
 
 export default function Home() {
   return (
-    <div className="font-montserrat">
-      <Navbar/>
-      <HeroCarousel/>
+    <div className="font-montserrat ">
+      <Navbar />
+      <HeroCarousel />
+      <InfoCards/>
       awearee
     </div>
   );
 }
-
-
-
 
 // if want to add the home page in the pages folder
 
@@ -26,10 +25,3 @@ export default function Home() {
 // }
 
 // export default page
-
-
-
-
-
-
-
