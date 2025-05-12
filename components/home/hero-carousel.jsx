@@ -32,7 +32,7 @@ const HeroCarousel = () => {
   return (
     <Slider
       {...settings}
-      className="slider-container relative w-[100%] h-full mb-20"
+      className="slider-container relative w-[100%] h-full mb-8"
     >
       {images.map((image, index) => (
         <Image

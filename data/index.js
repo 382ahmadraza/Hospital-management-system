@@ -1,5 +1,28 @@
 // All the array of objects or hard-corded data store here
 
+
+
+
+
+
+
+
+
+
+
+// info cards data 
+export const cards = [
+    { tile:"Board of Trustees" , description:'The Board of Trustees guides Ahmad Raza Hospital to exceptional healthcare standards with strategic insight.' , btn:'READ MORE'} ,
+    { tile:"Message of Trustee" , description:'Ahmad Raza Hospital was established in 1979 by our elders with the vision to serve the humanity' , btn:'READ MORE'},
+    { tile:"Professional staff" , description:'Hospitals employ a variety of health professions to deliver competent, ethical and professional services' , btn:'READ MORE'},
+    { tile:"Consult our doctors" , description:'Select the doctor you prefer and book a visit with him or her in a matter of minutes. Click the bellow:' , btn:'CHOOSE A DOCTOR'},
+]
+
+
+
+
+
+
 import { LocationPin, Mobile, Time } from "@/assets/svg";
 import { Facebook, Instagram, Linkdin } from "@/assets/svg/social";
 import Button from "@/components/shared/common/button";

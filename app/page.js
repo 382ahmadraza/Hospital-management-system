@@ -1,14 +1,14 @@
 import React from "react";
 import Navbar from "@/components/shared/navbar/navbar";
 import HeroCarousel from "@/components/home/hero-carousel";
-import InfoCards from "@/components/home/info-cards";
+import InfoCardsSection from "@/components/home/info-cards-section";
 
 export default function Home() {
   return (
     <div className="font-montserrat ">
       <Navbar />
       <HeroCarousel />
-      <InfoCards/>
+      <InfoCardsSection/>
       awearee
     </div>
   );
