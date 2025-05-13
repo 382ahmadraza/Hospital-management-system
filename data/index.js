@@ -5,8 +5,31 @@
 
 
 
+// Doctors 
 
-
+export const doctors = [
+      { name: 'Dr. M.Uzair', href: ''},
+      { name: 'Dr. Uzair', href: ''},
+      { name: 'Dr. Shehzaib Amin', href:' '},
+      { name: 'Dr. Shehzaib', href: ''},
+      { name: 'Dr. Muhammad Uzair', href: ''},
+      { name: 'Dr. Uzair', href: ''},
+      { name: 'Dr. M. Bilal', href: ''},
+      { name: 'Dr. Bilal', href: ''},
+      { name: 'Dr. Muhammad Ali', href: ''},
+      { name: 'Dr. Abrar Aslam', href: ''},
+      { name: 'Dr. Adnan Ahmad Khan', href: ''},
+      { name: 'Dr. Atif Maqsood', href: ''},
+      { name: 'Dr. Awais Aslam', href: ''},
+      { name: 'Dr. Faizan Aslam', href: ''},
+      { name: 'Dr. Azam Aslam', href: ''},
+      { name: 'Dr. Masood Javed', href: ''},
+      { name: 'Dr. Muhammad Aslam', href: ''},
+      { name: 'Dr. Muhammad Asif', href: ''},
+      { name: 'Dr. Ghulam Abbas', href: ''},
+      { name: 'Dr. Ghulam Mustafa', href: ''},
+      { name: 'Dr. Ghulam Sarwar', href: ''},
+   ]
 
 
 

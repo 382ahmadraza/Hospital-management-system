@@ -43,7 +43,7 @@ const TopBar = () => {
       {/* contact info bar for small screens */}
       <ToggleContactDetails />
 
-      {/* contact bar conatainer */}
+      {/* contact info bar conatainer */}
       <div className="hidden lg:flex gap-2 xl:gap-11 ">
         {HeaderContact.map((item) => {
           const { id, icon, label, value } = item;
