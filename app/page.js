@@ -3,6 +3,9 @@ import Navbar from "@/components/shared/navbar/navbar";
 import HeroCarousel from "@/components/home/hero-carousel";
 import InfoCardsSection from "@/components/home/info-cards-section";
 import Services from "@/components/home/services/services";
+import Companies from "@/components/home/companies";
+import PigeonMap from "@/components/shared/common/map";
+import Footer from "@/components/shared/footer";
 
 export default function Home() {
   return (
@@ -11,7 +14,9 @@ export default function Home() {
       <HeroCarousel />
       <InfoCardsSection/>
       <Services/>
-      
+      <Companies/>
+      <PigeonMap/>
+      <Footer/>
     </div>
   );
 }

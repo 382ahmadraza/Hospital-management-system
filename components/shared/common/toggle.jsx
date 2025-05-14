@@ -26,7 +26,7 @@ const Toggle = ({ text, doctor, className }) => {
       {isOpen && (
         <div
           onMouseLeave={() => setIsOpen(false)}
-          className='absolute  overflow-y-scroll h-[15rem] w-full bg-white'
+          className='absolute  overflow-y-scroll h-[17rem] w-full bg-white shadow-md'
         >
           {doctor.map((doctor, index) => (
             <LinkCustom

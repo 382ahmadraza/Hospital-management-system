@@ -5,18 +5,10 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Image from "next/image";
 import CustomArrow from "../shared/common/custom-arrow";
+import { images } from "@/data/index";
 
 const HeroCarousel = () => {
-  const images = [
-    "/assets/slides/slide-1.jpg",
-    "/assets/slides/slide-2.png",
-    "/assets/slides/slide-3.jpg",
-    "/assets/slides/slide-4.jpg",
-    "/assets/slides/slide-5.jpg",
-    "/assets/slides/slide-6.jpg",
-    "/assets/slides/slide-7.jpg",
-    "/assets/slides/slide-8.jpg",
-  ];
+  
 
   const settings = {
     dots: true,
@@ -40,7 +32,7 @@ const HeroCarousel = () => {
           width={1000}
           height={500}
           alt={`Slide ${index + 1}`}
-          className="w-full h-[150px] xs:h-full   zoom-in-out object-cover  "
+          className="w-full h-[150px] xs:h-full  "
         />
       ))}
     </Slider>

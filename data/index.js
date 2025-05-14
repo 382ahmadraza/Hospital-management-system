@@ -1,12 +1,106 @@
 // All the array of objects or hard-corded data store here
 
 
+export const campanies = [
+  '/assets/companies/1.jpg',
+  '/assets/companies/2.jpg',
+  '/assets/companies/3.jpg',
+  '/assets/companies/4.jpg',
+  '/assets/companies/5.jpg',
+  '/assets/companies/6.jpg',
+  '/assets/companies/7.jpg',
+  '/assets/companies/8.jpg',
+]
 
+
+
+// services cards 
+import { HeartPulseIcon, LabDiagnosisIcon, SurgeonIcon } from "@/assets/svg";
+
+export const services = [
+    {
+      id: 1,
+      title: "Critical Care",
+      description: "Emergency Services",
+      image: "/assets/organ.jpg",
+      icon: (
+        <HeartPulseIcon
+          className="text-white group-hover:text-primary"
+          size={50}
+        />
+      ),
+    },
+    {
+      id: 2,
+      title: "Health Professionals",
+      description: "Medical & Surgical Specialities",
+      image: "/assets/medical.png",
+      icon: (
+        <SurgeonIcon
+          className="text-white group-hover:text-primary"
+          size={50}
+        />
+      ),
+    },
+    {
+      id: 3,
+      title: "Standard",
+      description: "Lab and Diagnostics",
+      image: "/assets/lab.jpg",
+      icon: (
+        <LabDiagnosisIcon
+          className="text-white group-hover:text-primary"
+          size={50}
+        />
+      ),
+    },
+  ];
+
+
+
+
+// time table data
+export const WorkingHours = [
+    {
+      id: 1,
+      day: "Monday",
+      time: "24 Hours Open",
+    },
+    {
+      id: 2,
+      day: "Tuesday",
+      time: "24 Hours Open",
+    },
+    {
+      id: 3,
+      day: "Wednesday",
+      time: "24 Hours Open",
+    },
+    {
+      id: 4,
+      day: "Thursday",
+      time: "24 Hours Open",
+    },
+    {
+      id: 5,
+      day: "Friday",
+      time: "24 Hours Open",
+    },
+    {
+      id: 6,
+      day: "Saturday",
+      time: "24 Hours Open",
+    },
+    {
+      id: 7,
+      day: "Sunday",
+      time: "24 Hours Open",
+    },
+  ];
 
 
 
 // Doctors 
-
 export const doctors = [
       { name: 'Dr. M.Uzair', href: ''},
       { name: 'Dr. Uzair', href: ''},
@@ -30,6 +124,18 @@ export const doctors = [
       { name: 'Dr. Ghulam Mustafa', href: ''},
       { name: 'Dr. Ghulam Sarwar', href: ''},
    ]
+
+// slides images 
+export const images = [
+    "/assets/slides/slide-1.jpg",
+    "/assets/slides/slide-2.png",
+    "/assets/slides/slide-3.jpg",
+    "/assets/slides/slide-4.jpg",
+    "/assets/slides/slide-5.jpg",
+    "/assets/slides/slide-6.jpg",
+    "/assets/slides/slide-7.jpg",
+    "/assets/slides/slide-8.jpg",
+  ];
 
 
 

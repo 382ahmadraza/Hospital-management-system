@@ -5,6 +5,7 @@ import SearchField from "../common/search-field";
 import LinkCustom from "../common/link-custom";
 import { navLinks,social } from "@/data/index";
 import { usePathname } from "next/navigation";
+import SocialLinks from "../social-links";
 
 const Navbar = () => {
  
@@ -25,14 +26,15 @@ const Navbar = () => {
             <SearchField />
           </div>
 
-          {/* social media icons  */}
+          <SocialLinks/>
+          {/* social media icons 
           <div className="flex items-center px-2 h-full gap-3">
             {social.map((item, index) => (
               <LinkCustom key={index} url={item.href}>
                 {item.icon}
               </LinkCustom>
             ))}
-          </div>
+          </div> */}
         </div>
 
         {/* nav bottom part  */}
