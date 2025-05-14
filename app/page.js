@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "@/components/shared/navbar/navbar";
 import HeroCarousel from "@/components/home/hero-carousel";
 import InfoCardsSection from "@/components/home/info-cards-section";
+import Services from "@/components/home/services/services";
 
 export default function Home() {
   return (
@@ -9,7 +10,8 @@ export default function Home() {
       <Navbar />
       <HeroCarousel />
       <InfoCardsSection/>
-      awearee
+      <Services/>
+      
     </div>
   );
 }

@@ -4,7 +4,7 @@ import InfoCard from "../shared/common/info-card";
 
 const InfoCardsSection = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  w-[93%] mx-auto ">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-16">
       {cards.map((card, index) => (
         <div key={index} className="odd:bg-primary even:bg-primaryLight " >
           <InfoCard
