@@ -6,6 +6,7 @@ import Services from "@/components/home/services/services";
 import Companies from "@/components/home/companies";
 import PigeonMap from "@/components/shared/common/map";
 import Footer from "@/components/shared/footer";
+import Features from "@/components/home/features";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <HeroCarousel />
       <InfoCardsSection/>
       <Services/>
+      <Features/>
       <Companies/>
       <PigeonMap/>
       <Footer/>
