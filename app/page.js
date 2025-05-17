@@ -5,8 +5,9 @@ import InfoCardsSection from "@/components/home/info-cards-section";
 import Services from "@/components/home/services/services";
 import Companies from "@/components/home/companies";
 import PigeonMap from "@/components/shared/common/map";
-import Footer from "@/components/shared/footer";
-import Features from "@/components/home/features";
+import Footer from "@/components/shared/footer/footer";
+import Features from "@/components/home/features/features";
+// import FooterTop from "@/components/shared/footer/footer-top";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Features/>
       <Companies/>
       <PigeonMap/>
+      {/* <FooterTop/> */}
       <Footer/>
     </div>
   );

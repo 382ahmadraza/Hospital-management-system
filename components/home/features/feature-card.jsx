@@ -1,11 +1,11 @@
-import { Healing } from "@/assets/svg";
 import React from "react";
 
-const Features = () => {
-  const fillPercentage = (9 / 10) * 100;
+const FeatureCard = ({ icon, label , value}) => {
+  const fillPercentage = (value / 10) * 100;
+
   return (
-    <div className="border border-black w-fit">
-      <div className="relative w-54 h-54 flex items-center justify-center">
+    <div className="flex flex-col items-center justify-center ">
+      <div className="relative h-72 w-72 sm:w-54 sm:h-54 flex items-center justify-center">
         <svg className="absolute w-full h-full" viewBox="0 0 36 36">
           <circle
             className="text-gray-200"
@@ -29,16 +29,17 @@ const Features = () => {
             strokeLinecap="round"
           />
         </svg>
-        <span className="absolute font-bold text-sm">
-            <Healing/>
-        </span>
+        {/* icon  */}
+        <span className="absolute font-bold text-sm">{icon}</span>
       </div>
+
+      {/* label  */}
       <div className="flex flex-col items-center justify-center">
-        <p>Healing success</p>
-      <hr className="w-10 text-orange-500 my-2 border"/>
+        {label}
+        <hr className="w-10 text-orange-500 my-2 border" />
       </div>
     </div>
   );
 };
 
-export default Features;
+export default FeatureCard;

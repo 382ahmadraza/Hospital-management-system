@@ -1,6 +1,55 @@
 // All the array of objects or hard-corded data store here
 
 
+
+
+
+export const footerLinks = [
+    {
+      label: "Home",
+      icon: <ArrowRight className="opacity-0 group-hover:opacity-100" />,
+      link: "/",
+    },
+    {
+      label: "About",
+      icon: <ArrowRight className="opacity-0 group-hover:opacity-100" />,
+      link: "#",
+    },
+    {
+      label: "Get In Touch ",
+      icon: <ArrowRight className="opacity-0 group-hover:opacity-100" />,
+      link: "#",
+    },
+    {
+      label: "Terms & Conditions",
+      icon: <ArrowRight className="opacity-0 group-hover:opacity-100" />,
+      link: "/Properties",
+    },
+  ];
+
+
+
+
+
+
+// features 
+import {
+  DoctorIcon,
+  Healing,
+  MedicalDeviceIcon,
+  Scalpel,
+} from "@/assets/svg";
+
+ export const features = [
+    { icon: <Healing size={60} />, label: "Healing success", value: 9 },
+    { icon: <Scalpel size={60} />, label: "Operational success", value: 8 },
+    { icon: <MedicalDeviceIcon size={60} />, label: "Dedication", value: 10 },
+    { icon: <DoctorIcon size={60} />, label: "care expressed", value: 9 },
+  ];
+
+
+
+// campanies 
 export const campanies = [
   '/assets/companies/1.jpg',
   '/assets/companies/2.jpg',
@@ -156,6 +205,7 @@ import { LocationPin, Mobile, Time } from "@/assets/svg";
 import { Facebook, Instagram, Linkdin } from "@/assets/svg/social";
 import Button from "@/components/shared/common/button";
 import DropDown from "@/components/shared/common/drop-down";
+import { ArrowRight } from "lucide-react";
 
 
 export const navItems = [
