@@ -3,15 +3,24 @@ import React from "react";
 import TopBar from "./top-bar";
 import SearchField from "../common/search-field";
 import LinkCustom from "../common/link-custom";
-import { navLinks,social } from "@/data/index";
+import { navLinks } from "@/data/index";
 import { usePathname } from "next/navigation";
 import SocialLinks from "../social-links";
+import { navItems, navItems1, navItems2 } from "@/data/index";
+import NavMenuItem from "../common/drop-down";
 
 const Navbar = () => {
- 
-
   const pathName = usePathname();
-  // array of dropdwon menus
+
+  const navElements = [
+    { label: "home", items: "btn" },
+    { label: "d", items: navItems },
+    { label: "AFDS", items: "btn" },
+    { label: "d", items: navItems1 },
+    { label: "home", items: "btn" },
+    { label: "home", items: "btn" },
+    { label: "d", items: navItems2 },
+  ];
 
   return (
     <header className="h-20 lg:h-fit  ">
@@ -26,19 +35,20 @@ const Navbar = () => {
             <SearchField />
           </div>
 
-          <SocialLinks/>
-          {/* social media icons 
-          <div className="flex items-center px-2 h-full gap-3">
-            {social.map((item, index) => (
-              <LinkCustom key={index} url={item.href}>
-                {item.icon}
-              </LinkCustom>
-            ))}
-          </div> */}
+          {/* social icon  */}
+          <SocialLinks />
+        </div>
+
+        <div className="flex z-40 list-none">
+          {navElements.map((item, index) => {
+            return (
+                <NavMenuItem key={index} item={item}/>
+            );
+          })}
         </div>
 
         {/* nav bottom part  */}
-        <ul className="flex items-center w-full gap-5 text-sm font-bold ">
+        {/* <ul className="flex items-center w-full gap-5 text-sm font-bold ">
           {navLinks.map((item) => {
             return (
               <div
@@ -50,11 +60,10 @@ const Navbar = () => {
                 }`}
               >
                 <LinkCustom url={item.href}>{item.btn}</LinkCustom>
-                {/* <span className="lg:hidden">{item.btn}</span> */}
               </div>
             );
           })}
-        </ul>
+        </ul> */}
       </div>
     </header>
   );

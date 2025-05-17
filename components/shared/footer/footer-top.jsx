@@ -15,7 +15,7 @@ const FooterTop = () => {
       <div className='absolute inset-0 bg-[url("/assets/bg1.jpg")] bg-cover bg-center'></div>
 
       {/* Blue Overlay */}
-      <div className="absolute inset-0 bg-[#393a3be5] "></div>
+      <div className="absolute inset-0 bg-black/80 "></div>
 
       {/* Content */}
       <Container>
@@ -40,7 +40,7 @@ const FooterTop = () => {
               ariaLebel="get in touch"
               title="Get In Touch"
               icon={<ArrowRight />}
-              className="bg-white gap-3 py-2 !rounded-none text-sm !text-red-500 sm:py-4"
+              className="bg-white gap-3 py-2 !rounded-none text-sm !text-black sm:py-4"
             />
           </div>
 

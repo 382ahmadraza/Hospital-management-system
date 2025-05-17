@@ -8,7 +8,7 @@ const Footer = () => {
     <>
       <FooterTop />
 
-      <Container parentStyle={'bg-zinc-800'}>
+      <Container parentStyle={'bg-black/90'}>
         <div className="flex flex-wrap sm:justify-between justify-center text-center items-center gap-4 px-7 md:px-20 py-8 text-xs md:text-sm  text-white">
           <p className="">
             © 2023 Copyright by (AL RAZA HOSPITAL). All rights reserved.
