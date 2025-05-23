@@ -188,18 +188,22 @@ export const cards = [
   },
 ];
 
+
+
+
+
+
+
 import { LocationPin, Mobile, Time } from "@/assets/svg";
 import { Facebook, Instagram, Linkdin } from "@/assets/svg/social";
-import Button from "@/components/shared/common/button";
-import DropDown from "@/components/shared/common/drop-down";
 import { ArrowRight } from "lucide-react";
 
-export const navItems = [
+  const navItems = [
   { label: "Board Of Trustees", href: "/about-us/board-of-trustees" },
   { label: "Management Team", href: "/about-us/management-team" },
 ];
 
-export const navItems1 = [
+  const navItems1 = [
   {
     label: "Neuroscience",
     href: "/departments/neuroscience",
@@ -316,36 +320,25 @@ export const navItems1 = [
   },
 ];
 
-export const navItems2 = [
+  const navItems2 = [
   { label: "Laboratory", href: "/diagnostic/laboratory" },
   { label: "Radiology", href: "/diagnostic/radiology" },
 ];
-// export const navLinks = [
-//     { id: 1, btn: <Button btnText="Home" />, href: "/" },
-//     {
-//       id: 2,
-//       btn: <DropDown loop={navItems} navLink="About us" />,
-//       href: "/about-us",
-//     },
-//     {
-//       id: 3,
-//       btn: <DropDown loop={navItems1} navLink="Department" />,
-//       href: "/department",
-//     },
-//     { id: 4, btn: <Button btnText="ARMDC" />, href: "/armdc" },
-//     {
-//       id: 5,
-//       btn: <DropDown loop={navItems2} navLink="Diagnostic Center" />,
-//       href: "/diagnostic-center",
-//     },
-//     { id: 6, btn: <Button btnText="Contact Us" />, href: "/contact-us" },
-//     { id: 7, btn: <Button btnText="Careers" />, href: "/careers" },
-//     {
-//       id: 8,
-//       btn: <Button btnText="Online Lab Reports" />,
-//       href: "/online-lab-reports",
-//     },
-//   ];
+
+
+// navelements & dropdowns here 
+export const navElements = [
+   { label: "Home", href:'/', items: "btn" },
+   { label: "About Us", href:'/about-us', items: navItems },
+   { label: "Departments", href:'/department', items: navItems1 },
+   { label: "ARMDC", href:'/armdc', items: "btn" },
+   { label: "Diagnostic Center", href:'/diagnostic-center', items: navItems2 },
+   { label: "Contact Us", href:'/contact-us', items: "btn" },
+   { label: "Careers", href:'/careers', items: "btn" },
+   { label: "Online Lab Reports", href:'/online-lab-reports', items: "btn" },
+ ];
+
+
 
 export const social = [
   { href: "https://www.facebook.com", icon: <Facebook /> },

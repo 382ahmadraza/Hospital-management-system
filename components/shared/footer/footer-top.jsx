@@ -102,6 +102,7 @@ const FooterTop = () => {
                   Gulistan Colony No: 1,
                   <br /> Faisalabad, Pakistan.
                 </div>
+                <hr className="mx-2"/>
                 <div className="flex items-center gap-3">
                   <Mobile size={30} className="text-primary" />
                   info@arh.com.pk
