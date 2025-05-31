@@ -53,7 +53,7 @@ export default function NavMenuItem({
         <ul
           className={`bg-zinc-100 shadow-md border-t-4 border-primary p-2 z-10
           ${activeMenu === item.label ? "block" : "hidden"}  
-          lg:absolute lg:top-10 lg:left-0 lg:w-[14rem] lg:group-hover:block`}
+          lg:absolute lg:top-9 lg:left-0 lg:w-[14rem] lg:group-hover:block`}
         >
           {item.items.map((subItem, index) => (
             <li

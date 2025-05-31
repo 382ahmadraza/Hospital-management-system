@@ -1,5 +1,139 @@
 // All the array of objects or hard-corded data store here
 
+
+
+
+
+export const managementTeam = [
+  { name: "Dr. Muhammad Altaf Bhatti", designation: "Chairman Board of Governors", url: "/assets/dr-2.jpg" },
+  { name: "Dr. Muhammad Hanif", designation: "Dean", url: "/assets/dr-2.jpg" },
+  { name: "Kaleem Anwar", designation: "Registrar", url: "/assets/dr-2.jpg" },
+  { name: "Muhammad Sultan Ahmed", designation: "Director QEC", url: "/assets/dr-2.jpg" },
+  { name: "Javed Iqbal", designation: "Director P&D", url: "/assets/dr-2.jpg" },
+  { name: "Nadeem Anwar", designation: "Director IT", url: "/assets/dr-2.jpg" },
+  { name: "Faiz Ahmad", designation: "Director Admin", url: "/assets/dr-2.jpg" },
+  { name: "Masood Akram", designation: "Director Finance", url: "/assets/dr-2.jpg" },
+  { name: "Ramey Anwar", designation: "Director ORIC", url: "/assets/dr-2.jpg" },
+  { name: "Muhammad Akram", designation: "Director Library", url: "/assets/dr-2.jpg" },
+  { name: "Asif Raza", designation: "Director HR", url: "/assets/dr-2.jpg" },
+  { name: "Allah Rakhi", designation: "Director Public Relations", url: "/assets/dr-2.jpg" },
+];
+
+
+
+
+
+
+
+
+
+
+
+
+
+// trustees socials 
+import { Google, Twitter } from "@/assets/svg/social";
+export  const links = [
+    { id: 1, icon: <Facebook size={24} className="text-zinc-400 hover:text-primary" /> },
+    { id: 2, icon: <Twitter size={24} /> },
+    { id: 3, icon: <Google size={24} /> },
+  ];
+
+
+// trustees member 
+export const trustees = [
+  {
+    id: 1,
+    url: "/assets/dr-1.jpeg",
+    label: "Managing Trustee",
+    drName: "Mian Muhammad Adrees",
+    designation: "CEO Sitara Chemical Industries Ltd",
+  },
+  {
+    id: 2,
+    url: "/assets/dr-2.jpg",
+    label: "Deputy Managing Trustee/Member",
+    drName: "Mian Imran Ghafoor",
+    designation: "CEO Sitara Peroxide Ltd",
+  },
+  {
+    id: 3,
+    url: "/assets/dr-3.jpeg",
+    label: "Trustee/Member",
+    drName: "Usama Khan",
+    designation: "Chief of Surgery",
+  },
+  {
+    id: 4,
+    url: "/assets/dr-2.jpg",
+    label: "Trustee/Member",
+    drName: "Ahmed Raza",
+    designation: "Head of Cardiology",
+  },
+  {
+    id: 5,
+    url: "/assets/dr-2.jpg",
+    label: "Trustee/Member",
+    drName: "Sara Khan",
+    designation: "Director of Nursing",
+  },
+  {
+    id: 6,
+    url: "/assets/dr-1.jpeg",
+    label: "Trustee/Member",
+    drName: "Bilal Ahmed",
+    designation: "Chief of Pediatrics",
+  },{
+    id: 7,
+    url: "/assets/dr-2.jpg",
+    label: "Trustee/Member",
+    drName: "Aisha Malik",
+    designation: "Director of Research",
+  }
+];
+
+// aboout us text 
+export const text = (
+  <p className="text-justify text-sm lg:text-sm font-light text-darkGray">
+    <span className="font-semibold">Al Raza HOSPITA</span> is a welfare
+    project of the Sitara Group of Industries, established in 1979 and
+    inaugurated by the President of the Islamic Republic of Pakistan with the
+    objective of providing health facilities to the people of Faisalabad and
+    adjoining areas at the lowest possible cost. The hospital is registered
+    under Section 2(36) of the Income Tax Ordinance 2001 as a non-profit
+    organization (Npo). ARH is a teaching hospital for Al Raza Medical &
+    Dental College, approved by UHS Lahore. The hospital has more than 500 beds,
+    approved by the Pakistan Medical & Dental Council for the house jobs of
+    junior doctors. <br /> <br />
+    Since its inception in 1979, the hospital has achieved many milestones
+    regarding the treatment of ailing humanity. Besides almost full occupancy of
+    beds in indoor, more than 1100 patients are being benefit daily from
+    outdoor. OPD has been established in a newly constructed centrally
+    air-conditioned building. It consists of general and executive OPD. The
+    consultants on hospital roll as well as visiting consultants provide outdoor
+    services. OPD services are available in disciplines of internal medicine,
+    General Surgery, Nephrology, Neurology, Neurosurgery, Urology, Eye, ENT,
+    Gynae/Obs, Dermatology, Psychiatry, Dental & Maxillofacial surgery,
+    Physiotherapy, and Nutrition. on the-spot lab sample collection facility is
+    also available in OPD. The patients are extended outpatient services at a
+    registration fee of Rs. 50/- only for OPD and 100/- only for Emergency
+    patients. The poor and needy patients are provided with free medicines.
+    <br /> <br />
+    Al Raza Hospital has various categories of rooms for patients to suit
+    their preferences and budgets. All rooms maintain the highest standard of
+    quality and hygiene. The rooms are air-conditioned and provided with the
+    all-medical facilities. Dedicated medical and nursing staff have been
+    deployed to look after the patients. patients may choose between
+    semi-private (Saddiqu-e-Akbar, Usman-e-Ghani & Umer-e-Farooq), private, VIP,
+    and V.VIP.
+    <br /> <br />
+    The professional team of consultants and clinical staff, in collaboration
+    with administrative support, is committed to providing round-the-clock
+    quality medical care to the needy people.
+  </p>
+);
+
+// footer links here
 export const footerLinks = [
   {
     label: "Home",
@@ -188,25 +322,19 @@ export const cards = [
   },
 ];
 
-
-
-
-
-
-
 import { LocationPin, Mobile, Time } from "@/assets/svg";
 import { Facebook, Instagram, Linkdin } from "@/assets/svg/social";
 import { ArrowRight } from "lucide-react";
 
-  const navItems = [
-  { label: "Board Of Trustees", href: "/about-us/board-of-trustees" },
-  { label: "Management Team", href: "/about-us/management-team" },
+const navItems = [
+  { label: "Board Of Trustees", href: "/board-of-trustees" },
+  { label: "Management Team", href: "/management-team" },
 ];
 
-  const navItems1 = [
+const navItems1 = [
   {
     label: "Neuroscience",
-    href: "/departments/neuroscience",
+    href: "/department/neuroscience",
     fieldDoctors: [
       { name: "Dr.M Naeem ", url: "/about-us" },
       { name: "Dr.Azaan Aslam ", url: "/about-us" },
@@ -216,7 +344,7 @@ import { ArrowRight } from "lucide-react";
   },
   {
     label: "Medicine",
-    href: "/departments/medicine",
+    href: "/department/medicine",
     fieldDoctors: [
       { name: "Dr.Ghulam Abbas", url: "/about-us" },
       { name: "Dr.Masood Javed ", url: "/about-us" },
@@ -225,7 +353,7 @@ import { ArrowRight } from "lucide-react";
   },
   {
     label: "Child Health",
-    href: "/departments/child-health",
+    href: "/department/child-health",
     fieldDoctors: [
       { name: "Dr.Hina Ayasha ", url: "/about-us" },
       { name: "Dr.Arshad Farooq ", url: "/about-us" },
@@ -235,12 +363,12 @@ import { ArrowRight } from "lucide-react";
   },
   {
     label: "Dental Surgery",
-    href: "/departments/dental-surgery",
+    href: "/department/dental-surgery",
     fieldDoctors: [{ name: "Dr.Qurat-ul-Ain", url: "/about-us" }],
   },
   {
     label: "ENT",
-    href: "/departments/ent",
+    href: "/department/ent",
     fieldDoctors: [
       { name: "Prof. Dr.M Saleem ", url: "/about-us" },
       { name: "Dr.Liaqat Ali Chatta ", url: "/about-us" },
@@ -248,12 +376,12 @@ import { ArrowRight } from "lucide-react";
   },
   {
     label: "Dermatology",
-    href: "/departments/dermatology",
+    href: "/department/dermatology",
     fieldDoctors: [{ name: "Dr.Hafiza Hina Imtiaz ", url: "/about-us" }],
   },
   {
     label: "Urology",
-    href: "/departments/urology",
+    href: "/department/urology",
     fieldDoctors: [
       { name: "Dr.Furhan Jamshed ", url: "/about-us" },
       { name: "Dr.Sohail ", url: "/about-us" },
@@ -261,7 +389,7 @@ import { ArrowRight } from "lucide-react";
   },
   {
     label: "Eye Surgery",
-    href: "/departments/eye-surgery",
+    href: "/department/eye-surgery",
     fieldDoctors: [
       { name: "Dr.Amir Shahzad ", url: "/about-us" },
       { name: "Dr.Nasir Yaseen ", url: "/about-us" },
@@ -269,12 +397,12 @@ import { ArrowRight } from "lucide-react";
   },
   {
     label: "Gastroenterology",
-    href: "/departments/gastroenterology",
+    href: "/department/gastroenterology",
     fieldDoctors: [{ name: "Dr.Kashif Nawaz Sahi ", url: "/about-us" }],
   },
   {
     label: "Gynaecology",
-    href: "/departments/gynaecology",
+    href: "/department/gynaecology",
     fieldDoctors: [
       { name: "Prof. Dr.Nazia Musarat ", url: "/about-us" },
       { name: "Prof. Dr.Raheela Furhat ", url: "/about-us" },
@@ -282,7 +410,7 @@ import { ArrowRight } from "lucide-react";
   },
   {
     label: "General Surgery",
-    href: "/departments/general-surgery",
+    href: "/department/general-surgery",
     fieldDoctors: [
       { name: "Dr.Servat Saqib ", url: "/about-us" },
       { name: "Dr.Zakriya Rasheed ", url: "/about-us" },
@@ -292,7 +420,7 @@ import { ArrowRight } from "lucide-react";
   },
   {
     label: "Orthopedic",
-    href: "/departments/orthopedic",
+    href: "/department/orthopedic",
     fieldDoctors: [
       { name: "Prof. Dr.Zulfiqar Ahmaed ", url: "/about-us" },
       { name: "Dr.Abdul Aziz ", url: "/about-us" },
@@ -300,45 +428,42 @@ import { ArrowRight } from "lucide-react";
   },
   {
     label: "Psychiatry",
-    href: "/departments/psychiatry",
+    href: "/department/psychiatry",
     fieldDoctors: [{ name: "Dr.Shubhan ullah Ansari", url: "/about-us" }],
   },
   {
     label: "Pulmonology",
-    href: "/departments/pulmonology",
+    href: "/department/pulmonology",
     fieldDoctors: [{ name: "Dr.Awais Aslam ", url: "/about-us" }],
   },
   {
     label: "Cardiology",
-    href: "/departments/cardiology",
+    href: "/department/cardiology",
     fieldDoctors: [{ name: "Dr.Waqar Shamim ", url: "/about-us" }],
   },
   {
     label: "Dietitian and Nutritionist",
-    href: "/departments/dietitian-nutritionist",
-    fieldDoctors: [{ name: "Dn. Hafsa Nazir Ahmad ", url:'contact-us' }],
+    href: "/department/dietitian-nutritionist",
+    fieldDoctors: [{ name: "Dn. Hafsa Nazir Ahmad ", url: "contact-us" }],
   },
 ];
 
-  const navItems2 = [
+const navItems2 = [
   { label: "Laboratory", href: "/diagnostic/laboratory" },
   { label: "Radiology", href: "/diagnostic/radiology" },
 ];
 
-
-// navelements & dropdowns here 
+// navelements & dropdowns here
 export const navElements = [
-   { label: "Home", href:'/', items: "btn" },
-   { label: "About Us", href:'/about-us', items: navItems },
-   { label: "Departments", href:'/department', items: navItems1 },
-   { label: "ARMDC", href:'/armdc', items: "btn" },
-   { label: "Diagnostic Center", href:'/diagnostic-center', items: navItems2 },
-   { label: "Contact Us", href:'/contact-us', items: "btn" },
-   { label: "Careers", href:'/careers', items: "btn" },
-   { label: "Online Lab Reports", href:'/online-lab-reports', items: "btn" },
- ];
-
-
+  { label: "Home", href: "/", items: "btn" },
+  { label: "About Us", href: "/about-us", items: navItems },
+  { label: "Departments", href: "/department", items: navItems1 },
+  { label: "ARMDC", href: "/armdc", items: "btn" },
+  { label: "Diagnostic Center", href: "/diagnostic-center", items: navItems2 },
+  { label: "Contact Us", href: "/contact-us", items: "btn" },
+  { label: "Careers", href: "/careers", items: "btn" },
+  { label: "Online Lab Reports", href: "/online-lab-reports", items: "btn" },
+];
 
 export const social = [
   { href: "https://www.facebook.com", icon: <Facebook /> },

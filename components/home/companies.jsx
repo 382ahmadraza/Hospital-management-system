@@ -35,7 +35,7 @@ const Companies = () => {
   };
   return (
     <Container>
-      <div className="px-4 mt-11 lg:mx-20">
+      <div className=" ">
         <Heading
           level={1}
           CustomHeading="Panel Companies / Valuable Clients"

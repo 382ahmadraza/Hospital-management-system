@@ -5,7 +5,7 @@ import Container from "../common/container";
 
 const Footer = () => {
   return (
-    <>
+    <div className="font-montserrat">
       <FooterTop />
 
       <Container parentStyle={'bg-black/90'}>
@@ -17,7 +17,7 @@ const Footer = () => {
           <SocialLinks />
         </div>
       </Container>
-    </>
+    </div>
   );
 };
 

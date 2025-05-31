@@ -6,7 +6,7 @@ import Container from "@/components/shared/common/container";
 const Services = () => {
   return (
     <Container>
-      <div className="px-4 md:px-16 mt-20  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className=" mt-20  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {services.map((service) => {
           return (
             <ServiceCards

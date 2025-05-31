@@ -27,9 +27,8 @@ const PigeonMap = () => {
   };
 
   return (
-    <Container>
       <div
-        className=" h-[80vh] lg:h-[40rem] w-full relative"
+        className=" h-[80vh] lg:h-[40rem] w-full relative my-2"
         onMouseLeave={() => setShowPopup(false)}
       >
         <Map
@@ -68,7 +67,6 @@ const PigeonMap = () => {
           )}
         </Map>
       </div>
-    </Container>
   );
 };
 

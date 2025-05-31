@@ -10,7 +10,7 @@ import Container from "../common/container";
 
 const FooterTop = () => {
   return (
-    <footer className="relative px-2 md:px-8 lg:px-16 pt-11 flex flex-col text-white mt-2 ">
+    <footer className="relative px-2 md:px-8 lg:px-16 pt-11 flex flex-col text-white ">
       {/* Background Image */}
       <div className='absolute inset-0 bg-[url("/assets/bg1.jpg")] bg-cover bg-center'></div>
 

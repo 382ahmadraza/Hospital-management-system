@@ -6,7 +6,7 @@ import Container from "@/components/shared/common/container";
 const Features = () => {
   return (
     <Container>
-      <div className="px-4 md:px-16 lg:px-20 my-16 pt-6">
+      <div className=" my-16 pt-6">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 ">
           {features.map((feature, index) => (
             <FeatureCard

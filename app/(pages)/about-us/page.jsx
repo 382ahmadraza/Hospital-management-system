@@ -1,4 +1,7 @@
-import React from 'react'
+import Container from "@/components/shared/common/container";
+import Heading from "@/components/shared/common/heading";
+import { text } from "@/data";
+import React from "react";
 
 export const metadata = {
   title: "About us | Al Raza Hospital - Faisalabad",
@@ -6,11 +9,21 @@ export const metadata = {
 };
 
 const AboutUs = () => {
-
-
   return (
-    <div>AboutUs </div>
-  )
-}
+    <Container parentStyle={"py-10"}>
+      <Heading
+        level={2}
+        CustomHeadingStyle="!text-lg !font-normal"
+        CustomHeading={"GENERAL INFO"}
+      />
+      <Heading
+        level={1}
+        CustomHeadingStyle=" !my-2"
+        CustomHeading={"ABOUT US"}
+      />
+      {text}
+    </Container>
+  );
+};
 
-export default AboutUs
+export default AboutUs;

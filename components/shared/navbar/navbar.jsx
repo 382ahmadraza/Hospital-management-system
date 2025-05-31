@@ -9,7 +9,7 @@ import NavMenuItem from "../common/navbar-elements";
 
 const Navbar = () => {
   return (
-    <header className="h-20 lg:h-fit  ">
+    <header className="h-20 lg:h-fit font-montserrat ">
      
       {/* contact info bar  */}
       <TopBar />
