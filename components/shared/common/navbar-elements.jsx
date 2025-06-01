@@ -27,7 +27,11 @@ export default function NavMenuItem({
         <LinkCustom
           url={item.href}
           className={`cursor-pointer font-bold lg:font-semibold px-1 lg:py-2 block text-base lg:text-sm hover:text-primary w-fit my-2 lg:my-0 lg:mx-2 xl:mx-3 ${
-            item.href === pathName
+            (
+              item.href === "/"
+                ? pathName === "/"
+                : pathName.startsWith(item.href)
+            )
               ? "text-primary lg:border-b-4 border-primary"
               : "text-zinc-600"
           }`}
@@ -63,12 +67,12 @@ export default function NavMenuItem({
               <div className="flex justify-between items-center group">
                 <LinkCustom
                   url={subItem.href || "#"}
-                  className={`${
-                    `hover:bg-gray-200 flex items-center hover:text-primary h-full w-full lg:px-2 py-1.5 ${subItem.href === pathName ? "text-primary" : "text-darkGray"}`
-                  }`}
+                  className={`${`hover:bg-gray-200 flex items-center hover:text-primary h-full w-full lg:px-2 py-1.5 ${
+                    subItem.href === pathName ? "text-primary" : "text-darkGray"
+                  }`}`}
                 >
-                    <ChevronIcon className="-rotate-90 mr-1" size={14} />
-                    {subItem.label}
+                  <ChevronIcon className="-rotate-90 mr-1" size={14} />
+                  {subItem.label}
                 </LinkCustom>
 
                 {Array.isArray(subItem.fieldDoctors) && (
@@ -93,13 +97,13 @@ export default function NavMenuItem({
                 >
                   {subItem.fieldDoctors.map((doc, i) => (
                     <LinkCustom
-                      url={doc.url}
+                      url={`/department/neuroscience${doc.url}`}
                       key={i}
                       className={`lg:px-2 py-1 hover:bg-gray-200 flex hover:text-primary items-center ${
                         doc.url === pathName ? "text-primary" : "text-darkGray"
                       }`}
                     >
-                      <ChevronIcon className="-rotate-90 mr-1" size={14}/>
+                      <ChevronIcon className="-rotate-90 mr-1" size={14} />
                       {doc.name}
                     </LinkCustom>
                   ))}

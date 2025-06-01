@@ -1,6 +1,23 @@
 // All the array of objects or hard-corded data store here
 
+// radiology
+export const radiology = [
+  "/assets/radio1.jpeg",
+  "/assets/radio2.jpeg",
+  "/assets/radio3.jpeg",
+  "/assets/radio4.jpeg",
+  
+];
 
+
+// laboratory
+export const lab = [
+  "/assets/lab1.jpg",
+  "/assets/lab2.jpg",
+  "/assets/lab3.jpg",
+  "/assets/lab4.jpg",
+  
+];
 
 
 
@@ -19,17 +36,7 @@ export const managementTeam = [
   { name: "Allah Rakhi", designation: "Director Public Relations", url: "/assets/dr-2.jpg" },
 ];
 
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 // trustees socials 
 import { Google, Twitter } from "@/assets/svg/social";
@@ -301,24 +308,30 @@ export const cards = [
     description:
       "The Board of Trustees guides Ahmad Raza Hospital to exceptional healthcare standards with strategic insight.",
     btn: "READ MORE",
+    href:'/board-of-trustees'
   },
   {
     tile: "Message of Trustee",
     description:
       "Ahmad Raza Hospital was established in 1979 by our elders with the vision to serve the humanity",
     btn: "READ MORE",
+    href:'/board-of-trustees'
+
   },
   {
     tile: "Professional staff",
     description:
       "Hospitals employ a variety of health professions to deliver competent, ethical and professional services",
     btn: "READ MORE",
+    href:'/management-team'
+
   },
   {
     tile: "Consult our doctors",
     description:
       "Select the doctor you prefer and book a visit with him or her in a matter of minutes. Click the bellow:",
     btn: "CHOOSE A DOCTOR",
+    href:'#'
   },
 ];
 
@@ -331,12 +344,12 @@ const navItems = [
   { label: "Management Team", href: "/management-team" },
 ];
 
-const navItems1 = [
+export const navItems1 = [
   {
     label: "Neuroscience",
     href: "/department/neuroscience",
     fieldDoctors: [
-      { name: "Dr.M Naeem ", url: "/about-us" },
+      { name: "Dr.M Naeem ", url: " /dr-m-naeem" },
       { name: "Dr.Azaan Aslam ", url: "/about-us" },
       { name: "Dr.Faizan Aslam ", url: "/about-us" },
       { name: "Dr.Atif Maqsood ", url: "/about-us" },

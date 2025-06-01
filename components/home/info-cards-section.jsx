@@ -2,7 +2,7 @@ import React from "react";
 import { cards } from "@/data";
 import InfoCard from "../shared/common/info-card";
 import Container from "../shared/common/container";
-
+ 
 const InfoCardsSection = () => {
   return (
     <Container>
@@ -13,6 +13,7 @@ const InfoCardsSection = () => {
             title={card.tile}
             description={card.description}
             btn={card.btn}
+            url = {card.href}
           />
         </div>
       ))}
