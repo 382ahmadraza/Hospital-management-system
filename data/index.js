@@ -19,7 +19,7 @@ export const lab = [
   
 ];
 
-
+  
 
 export const managementTeam = [
   { name: "Dr. Muhammad Altaf Bhatti", designation: "Chairman Board of Governors", url: "/assets/dr-2.jpg" },
@@ -349,117 +349,134 @@ export const navItems1 = [
     label: "Neuroscience",
     href: "/department/neuroscience",
     fieldDoctors: [
-      { name: "Dr.M Naeem ", url: " /dr-m-naeem" },
-      { name: "Dr.Azaan Aslam ", url: "/about-us" },
-      { name: "Dr.Faizan Aslam ", url: "/about-us" },
-      { name: "Dr.Atif Maqsood ", url: "/about-us" },
+      { id: 1, name: "Dr.M Naeem", url: "/department/neuroscience/drm-naeem", img: "/assets/dr.jpeg", dept: "Neuroscience", details: "" },
+      { id: 2, name: "Dr.Azaan Aslam", url: "/department/neuroscience/drazaan-aslam", img: "/assets/", dept: "Neuroscience", details: "" },
+      { id: 3, name: "Dr.Faizan Aslam", url: "/department/neuroscience/drfaizan-aslam", img: "/assets/", dept: "Neuroscience", details: "" },
+      { id: 4, name: "Dr.Atif Maqsood", url: "/department/neuroscience/dratif-maqsood", img: "/assets/", dept: "Neuroscience", details: "" },
     ],
   },
   {
     label: "Medicine",
     href: "/department/medicine",
     fieldDoctors: [
-      { name: "Dr.Ghulam Abbas", url: "/about-us" },
-      { name: "Dr.Masood Javed ", url: "/about-us" },
-      { name: "Mubarak Ali ", url: "/about-us" },
+      { id: 5, name: "Dr.Ghulam Abbas", url: "/department/medicine/drghulam-abbas", img: "/assets/", dept: "", details: "" },
+      { id: 6, name: "Dr.Masood Javed", url: "/department/medicine/drmasood-javed", img: "/assets/", dept: "", details: "" },
+      { id: 7, name: "Mubarak Ali", url: "/department/medicine/mubarak-ali", img: "/assets/", dept: "", details: "" },
     ],
   },
   {
     label: "Child Health",
     href: "/department/child-health",
     fieldDoctors: [
-      { name: "Dr.Hina Ayasha ", url: "/about-us" },
-      { name: "Dr.Arshad Farooq ", url: "/about-us" },
-      { name: "Dr.Tanveer Ahmad ", url: "/about-us" },
-      { name: "Prof. Dr.Shakil Ahmad ", url: "/about-us" },
+      { id: 8, name: "Dr.Hina Ayasha", url: "/department/child-health/drhina-ayasha", img: "/assets/", dept: "", details: "" },
+      { id: 9, name: "Dr.Arshad Farooq", url: "/department/child-health/drarshad-farooq", img: "/assets/", dept: "", details: "" },
+      { id: 10, name: "Dr.Tanveer Ahmad", url: "/department/child-health/drtanveer-ahmad", img: "/assets/", dept: "", details: "" },
+      { id: 11, name: "Prof. Dr.Shakil Ahmad", url: "/department/child-health/prof-drshakil-ahmad", img: "/assets/", dept: "", details: "" },
     ],
   },
   {
     label: "Dental Surgery",
     href: "/department/dental-surgery",
-    fieldDoctors: [{ name: "Dr.Qurat-ul-Ain", url: "/about-us" }],
+    fieldDoctors: [
+      { id: 12, name: "Dr.Qurat-ul-Ain", url: "/department/dental-surgery/drqurat-ul-ain", img: "/assets/", dept: "", details: "" },
+    ],
   },
   {
     label: "ENT",
     href: "/department/ent",
     fieldDoctors: [
-      { name: "Prof. Dr.M Saleem ", url: "/about-us" },
-      { name: "Dr.Liaqat Ali Chatta ", url: "/about-us" },
+      { id: 13, name: "Prof. Dr.M Saleem", url: "/department/ent/prof-drm-saleem", img: "/assets/", dept: "", details: "" },
+      { id: 14, name: "Dr.Liaqat Ali Chatta", url: "/department/ent/drliaqat-ali-chatta", img: "/assets/", dept: "", details: "" },
     ],
   },
   {
     label: "Dermatology",
     href: "/department/dermatology",
-    fieldDoctors: [{ name: "Dr.Hafiza Hina Imtiaz ", url: "/about-us" }],
+    fieldDoctors: [
+      { id: 15, name: "Dr.Hafiza Hina Imtiaz", url: "/department/dermatology/drhafiza-hina-imtiaz", img: "/assets/", dept: "", details: "" },
+    ],
   },
   {
     label: "Urology",
     href: "/department/urology",
     fieldDoctors: [
-      { name: "Dr.Furhan Jamshed ", url: "/about-us" },
-      { name: "Dr.Sohail ", url: "/about-us" },
+      { id: 16, name: "Dr.Furhan Jamshed", url: "/department/urology/drfurhan-jamshed", img: "/assets/", dept: "", details: "" },
+      { id: 17, name: "Dr.Sohail", url: "/department/urology/drsohail", img: "/assets/", dept: "", details: "" },
     ],
   },
   {
     label: "Eye Surgery",
     href: "/department/eye-surgery",
     fieldDoctors: [
-      { name: "Dr.Amir Shahzad ", url: "/about-us" },
-      { name: "Dr.Nasir Yaseen ", url: "/about-us" },
+      { id: 18, name: "Dr.Amir Shahzad", url: "/department/eye-surgery/dramir-shahzad", img: "/assets/", dept: "", details: "" },
+      { id: 19, name: "Dr.Nasir Yaseen", url: "/department/eye-surgery/drnasir-yaseen", img: "/assets/", dept: "", details: "" },
     ],
   },
   {
     label: "Gastroenterology",
     href: "/department/gastroenterology",
-    fieldDoctors: [{ name: "Dr.Kashif Nawaz Sahi ", url: "/about-us" }],
+    fieldDoctors: [
+      { id: 20, name: "Dr.Kashif Nawaz Sahi", url: "/department/gastroenterology/drkashif-nawaz-sahi", img: "/assets/", dept: "", details: "" },
+    ],
   },
   {
     label: "Gynaecology",
     href: "/department/gynaecology",
     fieldDoctors: [
-      { name: "Prof. Dr.Nazia Musarat ", url: "/about-us" },
-      { name: "Prof. Dr.Raheela Furhat ", url: "/about-us" },
+      { id: 21, name: "Prof. Dr.Nazia Musarat", url: "/department/gynaecology/prof-drnazia-musarat", img: "/assets/", dept: "", details: "" },
+      { id: 22, name: "Prof. Dr.Raheela Furhat", url: "/department/gynaecology/prof-drraheela-furhat", img: "/assets/", dept: "", details: "" },
     ],
   },
   {
     label: "General Surgery",
     href: "/department/general-surgery",
     fieldDoctors: [
-      { name: "Dr.Servat Saqib ", url: "/about-us" },
-      { name: "Dr.Zakriya Rasheed ", url: "/about-us" },
-      { name: "Dr.Sultan Mehmood Khan ", url: "/about-us" },
-      { name: "Dr.Adnan Ahmad Khan ", url: "/about-us" },
+      { id: 23, name: "Dr.Servat Saqib", url: "/department/general-surgery/drservat-saqib", img: "/assets/", dept: "", details: "" },
+      { id: 24, name: "Dr.Zakriya Rasheed", url: "/department/general-surgery/drzakriya-rasheed", img: "/assets/", dept: "", details: "" },
+      { id: 25, name: "Dr.Sultan Mehmood Khan", url: "/department/general-surgery/drsultan-mehmood-khan", img: "/assets/", dept: "", details: "" },
+      { id: 26, name: "Dr.Adnan Ahmad Khan", url: "/department/general-surgery/dradnan-ahmad-khan", img: "/assets/", dept: "", details: "" },
     ],
   },
   {
     label: "Orthopedic",
     href: "/department/orthopedic",
     fieldDoctors: [
-      { name: "Prof. Dr.Zulfiqar Ahmaed ", url: "/about-us" },
-      { name: "Dr.Abdul Aziz ", url: "/about-us" },
+      { id: 27, name: "Prof. Dr.Zulfiqar Ahmaed", url: "/department/orthopedic/prof-drzulfiqar-ahmaed", img: "/assets/", dept: "", details: "" },
+      { id: 28, name: "Dr.Abdul Aziz", url: "/department/orthopedic/drabdul-aziz", img: "/assets/", dept: "", details: "" },
     ],
   },
   {
     label: "Psychiatry",
     href: "/department/psychiatry",
-    fieldDoctors: [{ name: "Dr.Shubhan ullah Ansari", url: "/about-us" }],
+    fieldDoctors: [
+      { id: 29, name: "Dr.Shubhan ullah Ansari", url: "/department/psychiatry/drshubhan-ullah-ansari", img: "/assets/", dept: "", details: "" },
+    ],
   },
   {
     label: "Pulmonology",
     href: "/department/pulmonology",
-    fieldDoctors: [{ name: "Dr.Awais Aslam ", url: "/about-us" }],
+    fieldDoctors: [
+      { id: 30, name: "Dr.Awais Aslam", url: "/department/pulmonology/drawais-aslam", img: "/assets/", dept: "", details: "" },
+    ],
   },
   {
     label: "Cardiology",
     href: "/department/cardiology",
-    fieldDoctors: [{ name: "Dr.Waqar Shamim ", url: "/about-us" }],
+    fieldDoctors: [
+      { id: 31, name: "Dr.Waqar Shamim", url: "/department/cardiology/drwaqar-shamim", img: "/assets/", dept: "", details: "" },
+    ],
   },
   {
     label: "Dietitian and Nutritionist",
     href: "/department/dietitian-nutritionist",
-    fieldDoctors: [{ name: "Dn. Hafsa Nazir Ahmad ", url: "contact-us" }],
+    fieldDoctors: [
+      { id: 32, name: "Dn. Hafsa Nazir Ahmad", url: "/department/dietitian-nutritionist/dn-hafsa-nazir-ahmad", img: "/assets/", dept: "", details: "" },
+    ],
   },
 ];
+
+
+
 
 const navItems2 = [
   { label: "Laboratory", href: "/diagnostic/laboratory" },

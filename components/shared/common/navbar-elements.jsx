@@ -97,7 +97,7 @@ export default function NavMenuItem({
                 >
                   {subItem.fieldDoctors.map((doc, i) => (
                     <LinkCustom
-                      url={`/department/neuroscience${doc.url}`}
+                      url={`${doc.url}`}
                       key={i}
                       className={`lg:px-2 py-1 hover:bg-gray-200 flex hover:text-primary items-center ${
                         doc.url === pathName ? "text-primary" : "text-darkGray"
