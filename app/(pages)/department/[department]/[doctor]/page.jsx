@@ -67,7 +67,7 @@ export default function DoctorPage() {
 
               <div className="flex flex-wrap ">
                 {contact.map((item) => (
-                  <div key={item.id} className="flex gap-2 text-gray-500">
+                  <div key={item.id} className="flex gap-2 text-sm text-gray-500">
                     {item.icon}
                     {item.label}
                   </div>
